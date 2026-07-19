@@ -26,15 +26,48 @@ function seedConfig_() {
 }
 
 function seedInstitutions_() {
-  const sh=getSheet_(BCXI.SHEETS.INSTITUTIONS); if(sh.getLastRow()>1) return;
-  const names=[
-    'Absa Bank Ghana Limited','Access Bank (Ghana) PLC','Agricultural Development Bank (ADB) PLC','Bank of Africa Ghana Limited','CalBank PLC','Consolidated Bank Ghana (CBG) Limited','Ecobank Ghana PLC','FBNBank (Ghana) Limited','Fidelity Bank Ghana Limited','First Atlantic Bank Limited','First National Bank (Ghana) Limited','GCB Bank PLC','Guaranty Trust Bank (Ghana) Limited','National Investment Bank (NIB) Limited','OmniBSIC Bank Ghana Limited','Prudential Bank Limited','Republic Bank (Ghana) PLC','Societe Generale Ghana PLC','Stanbic Bank Ghana Limited','Standard Chartered Bank Ghana PLC','United Bank for Africa (UBA) Ghana Limited','Universal Merchant Bank (UMB) Limited','Zenith Bank (Ghana) Limited'
+  const sh=getSheet_(BCXI.SHEETS.INSTITUTIONS);
+  if(sh.getLastRow()>1) {
+    sh.deleteRows(2, sh.getLastRow()-1);
+  }
+  const list=[
+    {id: 'BANK_01', name: 'Absa Bank Ghana', slug: 'absa-bank-ghana'},
+    {id: 'BANK_02', name: 'Access Bank Ghana', slug: 'access-bank-ghana'},
+    {id: 'BANK_03', name: 'Agricultural Development Bank (ADB)', slug: 'agricultural-development-bank'},
+    {id: 'BANK_04', name: 'Bank of Africa Ghana', slug: 'bank-of-africa-ghana'},
+    {id: 'BANK_05', name: 'CalBank', slug: 'calbank'},
+    {id: 'BANK_06', name: 'Consolidated Bank Ghana (CBG)', slug: 'consolidated-bank-ghana'},
+    {id: 'BANK_07', name: 'Ecobank Ghana', slug: 'ecobank-ghana'},
+    {id: 'BANK_08', name: 'Fidelity Bank Ghana', slug: 'fidelity-bank-ghana'},
+    {id: 'BANK_09', name: 'First Atlantic Bank', slug: 'first-atlantic-bank'},
+    {id: 'BANK_10', name: 'First National Bank Ghana (FNB)', slug: 'first-national-bank-ghana'},
+    {id: 'BANK_11', name: 'GCB Bank PLC', slug: 'gcb-bank'},
+    {id: 'BANK_12', name: 'Guaranty Trust Bank Ghana (GTBank)', slug: 'gtbank-ghana'},
+    {id: 'BANK_13', name: 'National Investment Bank (NIB)', slug: 'national-investment-bank'},
+    {id: 'BANK_14', name: 'OmniBSIC Bank Ghana', slug: 'omnibsic-bank-ghana'},
+    {id: 'BANK_15', name: 'Prudential Bank', slug: 'prudential-bank'},
+    {id: 'BANK_16', name: 'Republic Bank Ghana', slug: 'republic-bank-ghana'},
+    {id: 'BANK_17', name: 'Société Générale Ghana', slug: 'societe-generale-ghana'},
+    {id: 'BANK_18', name: 'Stanbic Bank Ghana', slug: 'stanbic-bank-ghana'},
+    {id: 'BANK_19', name: 'Standard Chartered Bank Ghana', slug: 'standard-chartered-bank-ghana'},
+    {id: 'BANK_20', name: 'United Bank for Africa (UBA) Ghana', slug: 'uba-ghana'},
+    {id: 'BANK_21', name: 'Universal Merchant Bank (UMB)', slug: 'universal-merchant-bank'},
+    {id: 'BANK_22', name: 'Zenith Bank Ghana', slug: 'zenith-bank-ghana'},
+    {id: 'BANK_23', name: 'FBNBank Ghana', slug: 'fbnbank-ghana'}
   ];
   const base=getConfigValue_('ASSET_BASE_URL','').replace(/\/$/,'');
-  const rows=names.map((name,i)=>{
-    const slug=name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-    return ['BANK-'+String(i+1).padStart(2,'0'),name,slug,true,base+'/institutions/'+slug+'/logo.webp',base+'/institutions/'+slug+'/hero.webp','#0B1F3A','#1D6FA5',''];
-  }); sh.getRange(2,1,rows.length,rows[0].length).setValues(rows);
+  const rows=list.map(item=>[
+    item.id,
+    item.name,
+    item.slug,
+    true,
+    base+'/institutions/'+item.slug+'/logo.png',
+    base+'/institutions/'+item.slug+'/hero.webp',
+    '#0B1F3A',
+    '#1D6FA5',
+    ''
+  ]);
+  sh.getRange(2,1,rows.length,rows[0].length).setValues(rows);
 }
 
 function seedQuestions_() {
