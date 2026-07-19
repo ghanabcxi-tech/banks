@@ -1,0 +1,13 @@
+# Local logs and temporary files
+*.log
+.system_generated/
+scratch/
+
+# Archives and package files
+*.zip
+*.tar.gz
+*.tgz
+
+# OS specific files
+.DS_Store
+Thumbs.db

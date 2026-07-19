@@ -1,0 +1,15 @@
+{
+  "version": "1.2",
+  "institutions": 23,
+  "heroes_integrated": 23,
+  "logos_integrated": 23,
+  "missing_heroes": [],
+  "missing_logos": [],
+  "canonical_asset_tree": "assets/institutions/{institution-slug}/",
+  "mapping_files": [
+    "config/institution-assets.csv",
+    "config/institution-assets.json",
+    "implementation/INSTITUTION_BRAND_ASSET_MAPPING.gs",
+    "assets/institution-brand-map.js"
+  ]
+}

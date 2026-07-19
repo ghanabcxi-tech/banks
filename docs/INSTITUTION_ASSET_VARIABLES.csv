@@ -1,0 +1,24 @@
+institutionId,institutionName,slug,logoVariable,logoPath,heroVariable,heroPath
+BANK_01,Absa Bank Ghana Limited,absa-bank-ghana-limited,BANK_01_LOGO,assets/institutions/absa-bank-ghana-limited/logo.webp,BANK_01_HERO,assets/institutions/absa-bank-ghana-limited/hero.webp
+BANK_02,Access Bank (Ghana) PLC,access-bank-ghana-plc,BANK_02_LOGO,assets/institutions/access-bank-ghana-plc/logo.webp,BANK_02_HERO,assets/institutions/access-bank-ghana-plc/hero.webp
+BANK_03,Agricultural Development Bank (ADB) PLC,agricultural-development-bank-adb-plc,BANK_03_LOGO,assets/institutions/agricultural-development-bank-adb-plc/logo.webp,BANK_03_HERO,assets/institutions/agricultural-development-bank-adb-plc/hero.webp
+BANK_04,Bank of Africa Ghana Limited,bank-of-africa-ghana-limited,BANK_04_LOGO,assets/institutions/bank-of-africa-ghana-limited/logo.webp,BANK_04_HERO,assets/institutions/bank-of-africa-ghana-limited/hero.webp
+BANK_05,CalBank PLC,calbank-plc,BANK_05_LOGO,assets/institutions/calbank-plc/logo.webp,BANK_05_HERO,assets/institutions/calbank-plc/hero.webp
+BANK_06,Consolidated Bank Ghana (CBG) Limited,consolidated-bank-ghana-cbg-limited,BANK_06_LOGO,assets/institutions/consolidated-bank-ghana-cbg-limited/logo.webp,BANK_06_HERO,assets/institutions/consolidated-bank-ghana-cbg-limited/hero.webp
+BANK_07,Ecobank Ghana PLC,ecobank-ghana-plc,BANK_07_LOGO,assets/institutions/ecobank-ghana-plc/logo.webp,BANK_07_HERO,assets/institutions/ecobank-ghana-plc/hero.webp
+BANK_08,FBNBank (Ghana) Limited,fbnbank-ghana-limited,BANK_08_LOGO,assets/institutions/fbnbank-ghana-limited/logo.webp,BANK_08_HERO,assets/institutions/fbnbank-ghana-limited/hero.webp
+BANK_09,Fidelity Bank Ghana Limited,fidelity-bank-ghana-limited,BANK_09_LOGO,assets/institutions/fidelity-bank-ghana-limited/logo.webp,BANK_09_HERO,assets/institutions/fidelity-bank-ghana-limited/hero.webp
+BANK_10,First Atlantic Bank Limited,first-atlantic-bank-limited,BANK_10_LOGO,assets/institutions/first-atlantic-bank-limited/logo.webp,BANK_10_HERO,assets/institutions/first-atlantic-bank-limited/hero.webp
+BANK_11,First National Bank (Ghana) Limited,first-national-bank-ghana-limited,BANK_11_LOGO,assets/institutions/first-national-bank-ghana-limited/logo.webp,BANK_11_HERO,assets/institutions/first-national-bank-ghana-limited/hero.webp
+BANK_12,GCB Bank PLC,gcb-bank-plc,BANK_12_LOGO,assets/institutions/gcb-bank-plc/logo.webp,BANK_12_HERO,assets/institutions/gcb-bank-plc/hero.webp
+BANK_13,Guaranty Trust Bank (Ghana) Limited,guaranty-trust-bank-ghana-limited,BANK_13_LOGO,assets/institutions/guaranty-trust-bank-ghana-limited/logo.webp,BANK_13_HERO,assets/institutions/guaranty-trust-bank-ghana-limited/hero.webp
+BANK_14,National Investment Bank (NIB) Limited,national-investment-bank-nib-limited,BANK_14_LOGO,assets/institutions/national-investment-bank-nib-limited/logo.webp,BANK_14_HERO,assets/institutions/national-investment-bank-nib-limited/hero.webp
+BANK_15,OmniBSIC Bank Ghana Limited,omnibsic-bank-ghana-limited,BANK_15_LOGO,assets/institutions/omnibsic-bank-ghana-limited/logo.webp,BANK_15_HERO,assets/institutions/omnibsic-bank-ghana-limited/hero.webp
+BANK_16,Prudential Bank Limited,prudential-bank-limited,BANK_16_LOGO,assets/institutions/prudential-bank-limited/logo.webp,BANK_16_HERO,assets/institutions/prudential-bank-limited/hero.webp
+BANK_17,Republic Bank (Ghana) PLC,republic-bank-ghana-plc,BANK_17_LOGO,assets/institutions/republic-bank-ghana-plc/logo.webp,BANK_17_HERO,assets/institutions/republic-bank-ghana-plc/hero.webp
+BANK_18,Societe Generale Ghana PLC,societe-generale-ghana-plc,BANK_18_LOGO,assets/institutions/societe-generale-ghana-plc/logo.webp,BANK_18_HERO,assets/institutions/societe-generale-ghana-plc/hero.webp
+BANK_19,Stanbic Bank Ghana Limited,stanbic-bank-ghana-limited,BANK_19_LOGO,assets/institutions/stanbic-bank-ghana-limited/logo.webp,BANK_19_HERO,assets/institutions/stanbic-bank-ghana-limited/hero.webp
+BANK_20,Standard Chartered Bank Ghana PLC,standard-chartered-bank-ghana-plc,BANK_20_LOGO,assets/institutions/standard-chartered-bank-ghana-plc/logo.webp,BANK_20_HERO,assets/institutions/standard-chartered-bank-ghana-plc/hero.webp
+BANK_21,United Bank for Africa (UBA) Ghana Limited,united-bank-for-africa-uba-ghana-limited,BANK_21_LOGO,assets/institutions/united-bank-for-africa-uba-ghana-limited/logo.webp,BANK_21_HERO,assets/institutions/united-bank-for-africa-uba-ghana-limited/hero.webp
+BANK_22,Universal Merchant Bank (UMB) Limited,universal-merchant-bank-umb-limited,BANK_22_LOGO,assets/institutions/universal-merchant-bank-umb-limited/logo.webp,BANK_22_HERO,assets/institutions/universal-merchant-bank-umb-limited/hero.webp
+BANK_23,Zenith Bank (Ghana) Limited,zenith-bank-ghana-limited,BANK_23_LOGO,assets/institutions/zenith-bank-ghana-limited/logo.webp,BANK_23_HERO,assets/institutions/zenith-bank-ghana-limited/hero.webp

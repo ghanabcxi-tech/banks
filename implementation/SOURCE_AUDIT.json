@@ -1,0 +1,142 @@
+[
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/README.md",
+    "terms": [
+      "admin",
+      "customer",
+      "email"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Config.gs",
+    "terms": [
+      "admin",
+      "comment",
+      "customer",
+      "email",
+      "follow-up",
+      "followup"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Utils.gs",
+    "terms": [
+      "email"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/QuestionnaireSeed.gs",
+    "terms": [
+      "admin",
+      "complaint",
+      "customer"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Spreadsheet.gs",
+    "terms": [
+      "admin",
+      "complaint",
+      "customer",
+      "email",
+      "follow-up"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/SurveyService.gs",
+    "terms": [
+      "comment",
+      "customer",
+      "email",
+      "followup"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Auth.gs",
+    "terms": [
+      "admin",
+      "email"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/AdminService.gs",
+    "terms": [
+      "admin",
+      "comment",
+      "customer",
+      "email",
+      "follow-up"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Code.gs",
+    "terms": [
+      "admin",
+      "customer"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Styles.html",
+    "terms": [
+      "admin",
+      "comment"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Index.html",
+    "terms": [
+      "admin",
+      "customer"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/AppJS.html",
+    "terms": [
+      "comment",
+      "customer",
+      "email",
+      "follow-up",
+      "followup"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/Admin.html",
+    "terms": [
+      "admin"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/apps_script/AdminJS.html",
+    "terms": [
+      "admin",
+      "comment",
+      "customer",
+      "email",
+      "follow-up"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/github/index.html",
+    "terms": [
+      "admin",
+      "customer"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/docs/ASSET_MANIFEST_AND_PROMPTS.md",
+    "terms": [
+      "admin",
+      "customer"
+    ]
+  },
+  {
+    "file": "BCXI_Ghana_Experience_Intelligence_Platform/docs/SYSTEM_DESIGN.md",
+    "terms": [
+      "admin",
+      "comment",
+      "customer",
+      "email",
+      "follow-up"
+    ]
+  }
+]

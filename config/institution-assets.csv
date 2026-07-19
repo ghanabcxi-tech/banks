@@ -1,0 +1,24 @@
+institution_id,institution_name,slug,hero_path,logo_path,hero_integrated,logo_integrated
+BANK_01,Absa Bank Ghana,absa-bank-ghana,assets/institutions/absa-bank-ghana/hero.webp,assets/institutions/absa-bank-ghana/logo.png,True,True
+BANK_02,Access Bank Ghana,access-bank-ghana,assets/institutions/access-bank-ghana/hero.webp,assets/institutions/access-bank-ghana/logo.png,True,True
+BANK_03,Agricultural Development Bank (ADB),agricultural-development-bank,assets/institutions/agricultural-development-bank/hero.webp,assets/institutions/agricultural-development-bank/logo.png,True,True
+BANK_04,Bank of Africa Ghana,bank-of-africa-ghana,assets/institutions/bank-of-africa-ghana/hero.webp,assets/institutions/bank-of-africa-ghana/logo.png,True,True
+BANK_05,CalBank,calbank,assets/institutions/calbank/hero.webp,assets/institutions/calbank/logo.png,True,True
+BANK_06,Consolidated Bank Ghana (CBG),consolidated-bank-ghana,assets/institutions/consolidated-bank-ghana/hero.webp,assets/institutions/consolidated-bank-ghana/logo.png,True,True
+BANK_07,Ecobank Ghana,ecobank-ghana,assets/institutions/ecobank-ghana/hero.webp,assets/institutions/ecobank-ghana/logo.png,True,True
+BANK_08,Fidelity Bank Ghana,fidelity-bank-ghana,assets/institutions/fidelity-bank-ghana/hero.webp,assets/institutions/fidelity-bank-ghana/logo.png,True,True
+BANK_09,First Atlantic Bank,first-atlantic-bank,assets/institutions/first-atlantic-bank/hero.webp,assets/institutions/first-atlantic-bank/logo.png,True,True
+BANK_10,First National Bank Ghana (FNB),first-national-bank-ghana,assets/institutions/first-national-bank-ghana/hero.webp,assets/institutions/first-national-bank-ghana/logo.png,True,True
+BANK_11,GCB Bank PLC,gcb-bank,assets/institutions/gcb-bank/hero.webp,assets/institutions/gcb-bank/logo.png,True,True
+BANK_12,Guaranty Trust Bank Ghana (GTBank),gtbank-ghana,assets/institutions/gtbank-ghana/hero.webp,assets/institutions/gtbank-ghana/logo.png,True,True
+BANK_13,National Investment Bank (NIB),national-investment-bank,assets/institutions/national-investment-bank/hero.webp,assets/institutions/national-investment-bank/logo.png,True,True
+BANK_14,OmniBSIC Bank Ghana,omnibsic-bank-ghana,assets/institutions/omnibsic-bank-ghana/hero.webp,assets/institutions/omnibsic-bank-ghana/logo.png,True,True
+BANK_15,Prudential Bank,prudential-bank,assets/institutions/prudential-bank/hero.webp,assets/institutions/prudential-bank/logo.png,True,True
+BANK_16,Republic Bank Ghana,republic-bank-ghana,assets/institutions/republic-bank-ghana/hero.webp,assets/institutions/republic-bank-ghana/logo.png,True,True
+BANK_17,Société Générale Ghana,societe-generale-ghana,assets/institutions/societe-generale-ghana/hero.webp,assets/institutions/societe-generale-ghana/logo.png,True,True
+BANK_18,Stanbic Bank Ghana,stanbic-bank-ghana,assets/institutions/stanbic-bank-ghana/hero.webp,assets/institutions/stanbic-bank-ghana/logo.png,True,True
+BANK_19,Standard Chartered Bank Ghana,standard-chartered-bank-ghana,assets/institutions/standard-chartered-bank-ghana/hero.webp,assets/institutions/standard-chartered-bank-ghana/logo.png,True,True
+BANK_20,United Bank for Africa (UBA) Ghana,uba-ghana,assets/institutions/uba-ghana/hero.webp,assets/institutions/uba-ghana/logo.png,True,True
+BANK_21,Universal Merchant Bank (UMB),universal-merchant-bank,assets/institutions/universal-merchant-bank/hero.webp,assets/institutions/universal-merchant-bank/logo.png,True,True
+BANK_22,Zenith Bank Ghana,zenith-bank-ghana,assets/institutions/zenith-bank-ghana/hero.webp,assets/institutions/zenith-bank-ghana/logo.png,True,True
+BANK_23,FBNBank Ghana,fbnbank-ghana,assets/institutions/fbnbank-ghana/hero.webp,assets/institutions/fbnbank-ghana/logo.png,True,True
