@@ -80,6 +80,15 @@ function addAdminUser(email,name,institutionIds,role) {
   return {ok:true,email:email};
 }
 
+function createDefaultSuperAdmin(email, name) {
+  email=cleanEmail_(email); assert_(email,'Email required');
+  const existing=getObjects_(BCXI.SHEETS.ADMIN_USERS).find(a=>cleanEmail_(a.email)===email);
+  if(existing) return {ok:false,message:'Admin already exists.'};
+  const bankIds=getObjects_(BCXI.SHEETS.INSTITUTIONS).map(i=>String(i.institutionId));
+  appendRowsLocked_(BCXI.SHEETS.ADMIN_USERS,[[uuid_(),email,cleanText_(name,120),safeJson_(bankIds),'SUPER_ADMIN',true,nowIso_()]]);
+  return {ok:true,message:'Super Admin '+name+' created with access to all '+bankIds.length+' banks.'};
+}
+
 
 function refreshAssetUrlsFromConfig() {
   const base=getConfigValue_('ASSET_BASE_URL','').replace(/\/$/,'');

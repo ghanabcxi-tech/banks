@@ -15,7 +15,10 @@ const BCXI = Object.freeze({
     EMAIL_LOG: 'EMAIL_LOG',
     ACTIVITY_LOG: 'ACTIVITY_LOG',
     ASSETS: 'ASSETS',
-    BENCHMARKS: 'BENCHMARKS'
+    BENCHMARKS: 'BENCHMARKS',
+    COMPLAINTS: 'COMPLAINTS',
+    COMPLAINT_PUBLICATIONS: 'COMPLAINT_PUBLICATIONS',
+    BANK_ACTIONS: 'BANK_ACTIONS'
   },
   HEADERS: {
     CONFIG: ['key','value','description'],
@@ -31,7 +34,10 @@ const BCXI = Object.freeze({
     EMAIL_LOG: ['emailId','submissionId','institutionId','toEmail','fromActor','subject','status','error','createdAt'],
     ACTIVITY_LOG: ['logId','actorType','actorId','action','entityType','entityId','metadataJson','createdAt'],
     ASSETS: ['assetKey','url','alt','category','institutionId','active'],
-    BENCHMARKS: ['institutionId','institutionName','submissionCount','validBcxiCount','bcxiSum','sectionSumsJson','sectionCountsJson','promoters','passives','detractors','npsCount','overallRatingSum','overallRatingCount','lastUpdated']
+    BENCHMARKS: ['institutionId','institutionName','submissionCount','validBcxiCount','bcxiSum','sectionSumsJson','sectionCountsJson','promoters','passives','detractors','npsCount','overallRatingSum','overallRatingCount','lastUpdated'],
+    COMPLAINTS: ['complaintId','submissionId','sessionId','respondentId','institutionId','topic','body','status','createdAt'],
+    COMPLAINT_PUBLICATIONS: ['publicationId','complaintId','institutionId','publishedByAdminId','moderatedBody','publishedAt'],
+    BANK_ACTIONS: ['actionId','publicationId','institutionId','assignedTo','status','actionNotesJson','updatedAt']
   }
 });
 

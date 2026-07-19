@@ -18,3 +18,9 @@ function verifyAdminOtp(email,code) {
 function requireAdmin_(token) {
   const raw=CacheService.getScriptCache().get('admin:'+String(token||'')); assert_(raw,'Admin session expired. Please sign in again.'); return jsonParse_(raw,null);
 }
+
+function requireSuperAdmin_(token) {
+  const session=requireAdmin_(token);
+  assert_(session.role==='SUPER_ADMIN'||session.role==='DEVELOPER_ADMIN','Access denied. Super Admin privileges required.');
+  return session;
+}
