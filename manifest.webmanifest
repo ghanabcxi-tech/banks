@@ -1,1 +1,62 @@
-{"name":"BCXI-Ghana Experience Intelligence","short_name":"BCXI-Ghana","start_url":"./","display":"standalone","background_color":"#081a2f","theme_color":"#081a2f","icons":[]}
+{
+  "name": "Ghana CX Index",
+  "short_name": "CX Index",
+  "description": "Customer Experience Intelligence Platform for Ghana",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1e78b5",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e78b5' width='192' height='192'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='120' font-weight='bold' fill='white' dy='.3em'>GX</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231e78b5' width='512' height='512'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='320' font-weight='bold' fill='white' dy='.3em'>GX</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23f3f4f6' width='540' height='720'/><rect fill='%231e78b5' width='540' height='120'/><text x='270' y='70' text-anchor='middle' font-size='32' fill='white' font-weight='bold' font-family='system-ui'>Ghana CX Index</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["business", "finance"],
+  "shortcuts": [
+    {
+      "name": "Take Assessment",
+      "short_name": "Assess",
+      "description": "Start a customer experience assessment",
+      "url": "/app",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%232eb1cf' width='96' height='96' rx='20'/><text x='48' y='48' text-anchor='middle' dominant-baseline='middle' font-size='48' fill='white' font-weight='bold' font-family='system-ui'>📋</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Admin Portal",
+      "short_name": "Admin",
+      "description": "Access admin dashboard",
+      "url": "/admin",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%231e78b5' width='96' height='96' rx='20'/><text x='48' y='48' text-anchor='middle' dominant-baseline='middle' font-size='48' fill='white' font-weight='bold' font-family='system-ui'>📊</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,378 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#081a2f"><title>BCXI-Ghana Experience Intelligence</title><link rel="manifest" href="manifest.webmanifest"><style>*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 20% 10%,#1a6d99,#081a2f 48%,#040c15);color:#fff;padding:22px}.card{max-width:940px;width:100%;padding:clamp(24px,5vw,76px);border:1px solid rgba(255,255,255,.18);border-radius:34px;background:rgba(6,25,44,.72);backdrop-filter:blur(18px);box-shadow:0 35px 100px rgba(0,0,0,.35)}.eyebrow{color:#76d6ed;font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:12px}h1{font-size:clamp(38px,6vw,72px);line-height:.96;letter-spacing:-.055em;margin:16px 0 24px;max-width:800px}p{font-size:clamp(16px,1.8vw,20px);line-height:1.7;color:#c8d6e5;max-width:730px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}a{display:inline-flex;padding:15px 20px;border-radius:14px;text-decoration:none;font-weight:800;align-items:center;justify-content:center;transition:transform 0.2s}.primary{background:linear-gradient(135deg,#1e78b5,#2eb1cf);color:#fff}.secondary{color:#fff;border:1px solid rgba(255,255,255,.25)}a:hover{transform:translateY(-1px)}/* Ticker CSS */.ticker-container{margin-top:36px;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;flex-direction:column;gap:14px;width:100%;overflow:hidden}.ticker-title{font-size:11px;font-weight:800;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-transform:uppercase}.ticker-viewport{position:relative;width:100%;overflow:hidden;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:18px;padding:18px 0;display:flex;align-items:center}.ticker-viewport::before,.ticker-viewport::after{content:"";position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}.ticker-viewport::before{left:0;background:linear-gradient(to right,rgba(6,25,44,0.95),transparent)}.ticker-viewport::after{right:0;background:linear-gradient(to left,rgba(6,25,44,0.95),transparent)}.ticker-track{display:flex;width:max-content;animation:scrollTicker 40s linear infinite}.ticker-slide{display:flex;gap:24px;padding-right:24px;align-items:center}.ticker-logo-img{height:64px;width:64px;object-fit:contain;border-radius:12px;background:#fff;border:1px solid rgba(255,255,255,0.1);padding:4px;transition:transform 0.2s}.ticker-logo-img:hover{transform:scale(1.08)}@keyframes scrollTicker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}/* Mobile fixes for Ticker and Card */@media(max-width:600px){.card{padding:20px;border-radius:24px}.ticker-container{margin-top:24px;padding-top:18px}.ticker-viewport{padding:12px 0}.ticker-logo-img{height:54px;width:54px;border-radius:10px;padding:3px}}</style></head><body><main class="card"><div class="eyebrow">BCXI-Ghana</div><h1>Your banking experience is evidence.</h1><p>Evaluate the institutions you use through a structured customer-experience index. Your feedback supports service improvement, faster response to customer pain points, and stronger accountability.</p><div class="actions"><a id="surveyLink" class="primary" href="#">Start experience review</a><a id="adminLink" class="secondary" href="#">Institution admin</a></div><div class="ticker-container"><small class="ticker-title">Integrated Ghanaian Institutions</small><div class="ticker-viewport"><div id="tickerTrack" class="ticker-track"></div></div></div></main><script>const APP_SCRIPT_WEB_APP_URL='https://script.google.com/macros/s/AKfycbzNt-tRY0q5SpEIv07umkSglc7TQ-U4HDzJz62DOX2p8U-cIHETj5A_XWZJHpzwBVyo/exec';document.getElementById('surveyLink').href=APP_SCRIPT_WEB_APP_URL;document.getElementById('adminLink').href=APP_SCRIPT_WEB_APP_URL+'?view=admin';if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});const BANKS=[{name:'Absa Bank Ghana',slug:'absa-bank-ghana'},{name:'Access Bank Ghana',slug:'access-bank-ghana'},{name:'Agricultural Development Bank (ADB)',slug:'agricultural-development-bank'},{name:'Bank of Africa Ghana',slug:'bank-of-africa-ghana'},{name:'CalBank',slug:'calbank'},{name:'Consolidated Bank Ghana (CBG)',slug:'consolidated-bank-ghana'},{name:'Ecobank Ghana',slug:'ecobank-ghana'},{name:'Fidelity Bank Ghana',slug:'fidelity-bank-ghana'},{name:'First Atlantic Bank',slug:'first-atlantic-bank'},{name:'First National Bank Ghana (FNB)',slug:'first-national-bank-ghana'},{name:'GCB Bank PLC',slug:'gcb-bank'},{name:'Guaranty Trust Bank Ghana (GTBank)',slug:'gtbank-ghana'},{name:'National Investment Bank (NIB)',slug:'national-investment-bank'},{name:'OmniBSIC Bank Ghana',slug:'omnibsic-bank-ghana'},{name:'Prudential Bank',slug:'prudential-bank'},{name:'Republic Bank Ghana',slug:'republic-bank-ghana'},{name:'Société Générale Ghana',slug:'societe-generale-ghana'},{name:'Stanbic Bank Ghana',slug:'stanbic-bank-ghana'},{name:'Standard Chartered Bank Ghana',slug:'standard-chartered-bank-ghana'},{name:'United Bank for Africa (UBA) Ghana',slug:'uba-ghana'},{name:'Universal Merchant Bank (UMB)',slug:'universal-merchant-bank'},{name:'Zenith Bank Ghana',slug:'zenith-bank-ghana'},{name:'FBNBank Ghana',slug:'fbnbank-ghana'}];function buildTicker(){const track=document.getElementById('tickerTrack');if(!track)return;const slide1=document.createElement('div');slide1.className='ticker-slide';BANKS.forEach(b=>{const img=document.createElement('img');img.src=`./assets/institutions/${b.slug}/logo.png`;img.alt=b.name;img.title=b.name;img.className='ticker-logo-img';slide1.appendChild(img)});const slide2=slide1.cloneNode(true);track.appendChild(slide1);track.appendChild(slide2)}buildTicker();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1e78b5">
+  <meta name="description" content="Ghana CX Index measures customer experience across Ghanaian institutions through structured assessment and intelligent benchmarking.">
+  <meta property="og:title" content="Ghana CX Index">
+  <meta property="og:description" content="Measure. Benchmark. Improve. Customer experience intelligence for Ghana.">
+  <meta property="og:type" content="website">
 
+  <title>Ghana CX Index — Customer Experience Intelligence</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231e78b5'>GX</text></svg>">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <script type="module">
+    // Load Google Apps Script URL from environment or config
+    window.APPS_SCRIPT_URL = window.APPS_SCRIPT_URL ||
+      "https://script.google.com/macros/s/AKfycbxJwKTwicZOSg55drPd43D40Co9nNlr4SLcTaH_DY_QEMMeVZH2emtj95rtMrrUtMhfpg/exec";
+
+    // Register service worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(err => {
+        console.warn('Service Worker registration failed:', err);
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Ghana CX Index</a>
+      <nav>
+        <a href="/app">Take Assessment</a>
+        <a href="/admin">Admin Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Your banking experience is evidence.</h1>
+          <p>Evaluate the institutions you use through a structured customer-experience index. Your feedback supports service improvement, faster response to customer pain points, and stronger accountability.</p>
+          <div class="actions">
+            <a href="/app" class="btn btn-lg btn-primary">Share Your Experience</a>
+            <a href="#institutions" class="btn btn-lg btn-secondary">Participating Institutions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Measure -->
+    <section>
+      <div class="container">
+        <h2>What Ghana CX Index Measures</h2>
+        <p class="lead">Customer experience across 10 core dimensions. Your honest feedback creates benchmarks that drive institutional improvement.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-card-icon">📱</div>
+            <h3>Digital Experience</h3>
+            <p>Quality of mobile apps, websites, and online services</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">🏢</div>
+            <h3>Branch Experience</h3>
+            <p>Physical location accessibility and in-person service</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">🎧</div>
+            <h3>Customer Service</h3>
+            <p>Support quality, responsiveness, and problem resolution</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">💰</div>
+            <h3>Product & Pricing</h3>
+            <p>Competitiveness of rates, fees, and product offerings</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">⚡</div>
+            <h3>Speed & Efficiency</h3>
+            <p>Transaction speed and operational efficiency</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">🔒</div>
+            <h3>Security & Trust</h3>
+            <p>Data security, fraud protection, and institutional trust</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">💬</div>
+            <h3>Transparency</h3>
+            <p>Communication clarity and disclosure practices</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">👤</div>
+            <h3>Personalization</h3>
+            <p>Recognition of individual needs and tailored service</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">🛠️</div>
+            <h3>Complaint Resolution</h3>
+            <p>Fair handling and effectiveness of issue resolution</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">⭐</div>
+            <h3>Overall Impression</h3>
+            <p>General satisfaction and likelihood to continue</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="accent">
+      <div class="container">
+        <h2 class="text-center">How It Works</h2>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="step-number">1</div>
+            <h3>Profile</h3>
+            <p>Tell us a bit about yourself (optional demographics)</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">2</div>
+            <h3>Consent</h3>
+            <p>Agree to participate and give permission to use your feedback</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">3</div>
+            <h3>Assess</h3>
+            <p>Answer 70 questions across 10 dimensions (15–20 minutes)</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">4</div>
+            <h3>Results</h3>
+            <p>See your CX Index score and how you compare to benchmarks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section>
+      <div class="container">
+        <h2>Current & Future Industries</h2>
+        <p>Ghana CX Index launched with banking. Future industries coming soon.</p>
+        <div class="industry-grid">
+          <div class="industry-card active">
+            <div class="industry-badge">🏦 Active</div>
+            <h3>Banking</h3>
+            <p>23 participating institutions</p>
+          </div>
+          <div class="industry-card">
+            <div class="industry-badge">Coming Soon</div>
+            <h3>Insurance</h3>
+            <p>Planned 2026</p>
+          </div>
+          <div class="industry-card">
+            <div class="industry-badge">Coming Soon</div>
+            <h3>Telecommunications</h3>
+            <p>Planned 2026</p>
+          </div>
+          <div class="industry-card">
+            <div class="industry-badge">Coming Soon</div>
+            <h3>Healthcare</h3>
+            <p>Planned 2027</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Participating Institutions -->
+    <section class="accent" id="institutions">
+      <div class="container">
+        <h2 class="text-center">Participating Institutions (Banking)</h2>
+        <p class="text-center" style="margin-bottom: var(--space-8);">All 23 major Ghanaian banks are integrated and ready for CX assessment.</p>
+
+        <div class="ticker-container">
+          <div class="ticker-viewport">
+            <div id="tickerTrack" class="ticker-track"></div>
+          </div>
+        </div>
+
+        <div class="institutions-grid" id="institutionsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Why Customer Feedback Matters -->
+    <section>
+      <div class="container">
+        <h2>Why Customer Feedback Matters</h2>
+        <div class="two-column">
+          <div>
+            <h3>For Customers</h3>
+            <ul>
+              <li><strong>Voice:</strong> Your experience shapes institutional priorities</li>
+              <li><strong>Comparison:</strong> See how your bank compares to peers</li>
+              <li><strong>Change:</strong> Published feedback drives visible improvements</li>
+              <li><strong>Community:</strong> Join thousands of respondents creating accountability</li>
+            </ul>
+          </div>
+          <div>
+            <h3>For Institutions</h3>
+            <ul>
+              <li><strong>Insight:</strong> Understand where you're excelling and where to improve</li>
+              <li><strong>Benchmarking:</strong> See competitive position on every dimension</li>
+              <li><strong>Accountability:</strong> Published results and complaints drive action</li>
+              <li><strong>Reputation:</strong> Demonstrate commitment to customer satisfaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy & Independence -->
+    <section class="accent-alt">
+      <div class="container">
+        <h2 class="text-center">Privacy & Independence</h2>
+        <div class="privacy-grid">
+          <div class="privacy-card">
+            <h3>Your Data is Separate</h3>
+            <p>We keep respondent identity separate from feedback. Institutions see aggregate results and published feedback, not your personal information.</p>
+          </div>
+          <div class="privacy-card">
+            <h3>Independent Platform</h3>
+            <p>Ghana CX Index is not owned by any financial institution. We operate as an independent measurement authority focused on accountability and improvement.</p>
+          </div>
+          <div class="privacy-card">
+            <h3>Transparent Governance</h3>
+            <p>Our complaint governance workflow is published. You can see exactly how feedback flows from respondent to institution to action.</p>
+          </div>
+          <div class="privacy-card">
+            <h3>Compliant Practices</h3>
+            <p>We follow GDPR principles, obtain explicit consent, and publish our retention and use policies before launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section>
+      <div class="container">
+        <h2>Benchmarking Methodology (Summary)</h2>
+        <div class="methodology-box">
+          <h3>The Ghana CX Index Score</h3>
+          <ul>
+            <li><strong>Scale:</strong> 0–100 (higher is better)</li>
+            <li><strong>Dimensions:</strong> 10 core CX dimensions, 7 questions each</li>
+            <li><strong>Validity:</strong> A dimension is valid with minimum 5 numeric answers from 7</li>
+            <li><strong>Calculation:</strong> (mean – 1) / 6 × 100</li>
+            <li><strong>Overall Score:</strong> Average of valid dimensions; requires at least 8 valid dimensions</li>
+            <li><strong>Benchmarks:</strong> Only shown when sample size ≥ 30 respondents</li>
+            <li><strong>NPS:</strong> Separate calculation — % Promoters minus % Detractors</li>
+          </ul>
+          <p><a href="/docs/METHODOLOGY.md" class="btn btn-ghost">Read Full Methodology</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAs -->
+    <section class="accent">
+      <div class="container">
+        <h2 class="text-center">Ready to Contribute?</h2>
+        <div class="cta-buttons">
+          <a href="/app" class="btn btn-lg btn-primary">Share Your Experience Now</a>
+          <a href="#" class="btn btn-lg btn-secondary">Learn More About Participation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institution CTA -->
+    <section>
+      <div class="container">
+        <h2 class="text-center">For Institutions & Organizations</h2>
+        <p class="text-center" style="margin-bottom: var(--space-8); max-width: 600px; margin-left: auto; margin-right: auto;">Join Ghana CX Index to benchmark your customer experience, identify improvement areas, and demonstrate your commitment to service excellence.</p>
+        <div class="text-center">
+          <a href="mailto:institutions@ghanacxindex.org" class="btn btn-lg btn-primary">Join Ghana CX Index</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h3>Ghana CX Index</h3>
+        <p>Customer Experience Intelligence for Ghana</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/app">Take Assessment</a></li>
+          <li><a href="/admin">Admin Portal</a></li>
+          <li><a href="/docs">Documentation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/docs/PRIVACY.md">Privacy Policy</a></li>
+          <li><a href="/docs/METHODOLOGY.md">Methodology</a></li>
+          <li><a href="/docs/FAQ.md">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@ghanacxindex.org">support@ghanacxindex.org</a></li>
+          <li><a href="mailto:institutions@ghanacxindex.org">institutions@ghanacxindex.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top: 1px solid var(--border-color); padding-top: var(--space-6); margin-top: var(--space-8); text-align: center; color: var(--text-secondary); font-size: var(--text-sm);">
+      <p>&copy; 2026 Ghana CX Index. All rights reserved. Built for accountability, powered by customer feedback.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { INSTITUTIONS } from "./js/config.js";
+
+    // Build institution ticker and grid
+    function buildInstitutionLists() {
+      const tickerTrack = document.getElementById("tickerTrack");
+      const institutionsGrid = document.getElementById("institutionsGrid");
+
+      if (!tickerTrack || !institutionsGrid) return;
+
+      // Ticker
+      const slide1 = document.createElement("div");
+      slide1.className = "ticker-slide";
+
+      INSTITUTIONS.forEach((bank) => {
+        const img = document.createElement("img");
+        img.src = bank.logo;
+        img.alt = bank.name;
+        img.title = bank.name;
+        img.className = "ticker-logo-img";
+        slide1.appendChild(img);
+      });
+
+      const slide2 = slide1.cloneNode(true);
+      tickerTrack.appendChild(slide1);
+      tickerTrack.appendChild(slide2);
+
+      // Grid
+      INSTITUTIONS.forEach((bank) => {
+        const card = document.createElement("div");
+        card.className = "institution-card";
+        card.innerHTML = `
+          <div class="institution-logo">
+            <img src="${bank.logo}" alt="${bank.name}">
+          </div>
+          <h4>${bank.name}</h4>
+          <a href="/app/institutions/${bank.slug}" class="btn btn-sm btn-primary">Start Assessment</a>
+        `;
+        institutionsGrid.appendChild(card);
+      });
+    }
+
+    // Initialize on page load
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", buildInstitutionLists);
+    } else {
+      buildInstitutionLists();
+    }
+  </script>
+</body>
+</html>
