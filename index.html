@@ -52,7 +52,7 @@
           <h1>Your banking experience is evidence.</h1>
           <p>Evaluate the institutions you use through a structured customer-experience index. Your feedback supports service improvement, faster response to customer pain points, and stronger accountability.</p>
           <div class="actions">
-            <a id="shareBtn" href="#" class="btn btn-lg btn-primary">Share Your Experience</a>
+            <a href="https://script.google.com/macros/s/AKfycbxJwKTwicZOSg55drPd43D40Co9nNlr4SLcTaH_DY_QEMMeVZH2emtj95rtMrrUtMhfpg/exec" target="_blank" class="btn btn-lg btn-primary">Share Your Experience</a>
             <a href="#institutions" class="btn btn-lg btn-secondary">Participating Institutions</a>
           </div>
         </div>
@@ -376,15 +376,6 @@
       });
     }
 
-    // Connect Share Your Experience button to AppScript
-    function setupShareButton() {
-      const shareBtn = document.getElementById("shareBtn");
-      if (shareBtn && window.APPS_SCRIPT_URL) {
-        shareBtn.href = window.APPS_SCRIPT_URL;
-        shareBtn.target = "_blank";
-      }
-    }
-
     // Build bank logo ticker in hero section
     function buildHeroTicker() {
       const tickerTrack = document.getElementById("tickerTrack");
@@ -412,12 +403,10 @@
       document.addEventListener("DOMContentLoaded", () => {
         buildInstitutionLists();
         buildHeroTicker();
-        setupShareButton();
       });
     } else {
       buildInstitutionLists();
       buildHeroTicker();
-      setupShareButton();
     }
   </script>
 </body>
