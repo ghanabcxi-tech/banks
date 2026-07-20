@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Original unoptimized images (these are in assets/originals)
+github/assets/originals/
+
+# Large unorganized source folders
+Branding Pictures/
+batch 1/
+
+# Archive folders
+github/assets/archive/
+
+# Node scripts cache
+.npm/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local env files
+.env
+.env.local
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Google Forms credentials (never commit)
+*.credentials.json
+.clasp.json
