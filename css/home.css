@@ -348,6 +348,89 @@
   text-align: center;
 }
 
+/* Hero Ticker - Bank Logos */
+.ticker-section {
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: var(--space-4) 0;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-viewport::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 120, 181, 0.95), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-viewport::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(30, 120, 181, 0.95), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-track {
+  display: flex;
+  gap: var(--space-6);
+  width: max-content;
+  animation: scrollTicker 40s linear infinite;
+}
+
+.ticker-slide {
+  display: flex;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.ticker-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  background: white;
+  padding: var(--space-2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+}
+
+.ticker-logo:hover {
+  transform: scale(1.08);
+}
+
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Responsive home layout */
 @media (max-width: 640px) {
   section {
@@ -372,5 +455,14 @@
 
   .privacy-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ticker-logo {
+    height: 48px;
+  }
+
+  .ticker-section {
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
   }
 }

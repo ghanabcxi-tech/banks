@@ -52,8 +52,17 @@
           <h1>Your banking experience is evidence.</h1>
           <p>Evaluate the institutions you use through a structured customer-experience index. Your feedback supports service improvement, faster response to customer pain points, and stronger accountability.</p>
           <div class="actions">
-            <a href="/app" class="btn btn-lg btn-primary">Share Your Experience</a>
+            <a id="shareBtn" href="#" class="btn btn-lg btn-primary">Share Your Experience</a>
             <a href="#institutions" class="btn btn-lg btn-secondary">Participating Institutions</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bank Logo Ticker -->
+      <div class="ticker-section">
+        <div class="ticker-container">
+          <div class="ticker-viewport">
+            <div id="tickerTrack" class="ticker-track"></div>
           </div>
         </div>
       </div>
@@ -367,11 +376,48 @@
       });
     }
 
+    // Connect Share Your Experience button to AppScript
+    function setupShareButton() {
+      const shareBtn = document.getElementById("shareBtn");
+      if (shareBtn && window.APPS_SCRIPT_URL) {
+        shareBtn.href = window.APPS_SCRIPT_URL;
+        shareBtn.target = "_blank";
+      }
+    }
+
+    // Build bank logo ticker in hero section
+    function buildHeroTicker() {
+      const tickerTrack = document.getElementById("tickerTrack");
+      if (!tickerTrack) return;
+
+      const slide1 = document.createElement("div");
+      slide1.className = "ticker-slide";
+
+      INSTITUTIONS.forEach((bank) => {
+        const img = document.createElement("img");
+        img.src = bank.logo;
+        img.alt = bank.name;
+        img.title = bank.name;
+        img.className = "ticker-logo";
+        slide1.appendChild(img);
+      });
+
+      const slide2 = slide1.cloneNode(true);
+      tickerTrack.appendChild(slide1);
+      tickerTrack.appendChild(slide2);
+    }
+
     // Initialize on page load
     if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", buildInstitutionLists);
+      document.addEventListener("DOMContentLoaded", () => {
+        buildInstitutionLists();
+        buildHeroTicker();
+        setupShareButton();
+      });
     } else {
       buildInstitutionLists();
+      buildHeroTicker();
+      setupShareButton();
     }
   </script>
 </body>
