@@ -1,0 +1,18 @@
+{
+  "name": "bcxi-image-optimization",
+  "version": "1.0.0",
+  "description": "Image optimization for BCXI Ghana Experience Index platform",
+  "scripts": {
+    "optimize": "node scripts/optimize-images.js",
+    "optimize-watch": "nodemon --watch assets/originals scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

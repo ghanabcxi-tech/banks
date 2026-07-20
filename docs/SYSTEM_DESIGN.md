@@ -27,8 +27,8 @@
 - Admin email must exist in `ADMIN_USERS` and be active.
 - Login uses one-time email code with 10-minute expiry; authenticated session token expires after approximately 6 hours.
 - Admin data is filtered server-side by authorised institution IDs.
-- Customer PII is preserved for Developer/Super Admin access only. Bank/institution admins never receive direct customer contact details, including where follow-up consent exists.
-- Bank/institution admins can read institution-filtered complaint and feedback streams and open complaint details, but cannot contact customers directly. BCXI/Developer Admin orchestrates publication of complaints to banks and controls any permitted customer follow-up. Bank admins may update complaint workflow status, add internal action notes, and request a Customer Experience Audit.
+- Customer PII is shown in full only when follow-up consent is granted; otherwise it is masked.
+- Admin can read customer comment stream, open a submission detail, email consenting customers, and request a Customer Experience Audit.
 - Audit requests are logged and emailed to the configured consulting email.
 
 ## Data/privacy controls

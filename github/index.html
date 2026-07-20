@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Ghana CX - Customer Experience Index. Measuring experience across banking, utilities, education, healthcare, telecommunications, insurance, and public services in Ghana.">
+  <meta name="theme-color" content="#081a2f">
+  <title>Ghana CX | Customer Experience Index</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-text">GHANA CX</span>
+        <span class="logo-subtext">Customer Experience Index</span>
+      </div>
+      <nav class="nav">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="#sectors" class="nav-link">Industries</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="/pages/methodology.html" class="nav-link">Methodology</a>
+        <a href="/pages/privacy.html" class="nav-link">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <picture class="hero-image">
+        <!-- Desktop (1920px) -->
+        <source media="(min-width: 1200px)" srcset="assets/welcome/hero-1920.webp" type="image/webp">
+        <!-- Fallback to original -->
+        <source srcset="assets/welcome/hero.png" type="image/png">
+        <img src="assets/welcome/hero.png" alt="Ghana customer experience intelligence platform" class="hero-img" fetchpriority="high" decoding="sync">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">GHANA CX<br>Customer Experience Index</h1>
+        <p class="hero-subtitle">Your Experience Is Evidence</p>
+        <p class="hero-description">Measuring customer experience across the services that shape daily life in Ghana.</p>
+        <p class="hero-tagline">Measure. Benchmark. Improve.</p>
+        <a href="#sectors" class="cta-primary">Start Your Experience</a>
+        <a href="#how-it-works" class="cta-secondary">How It Works</a>
+      </div>
+    </section>
+
+    <!-- WHAT GHANA CX DOES -->
+    <section class="section-what" id="what-bcxi">
+      <div class="container">
+        <h2>Customer Experience Intelligence Across Ghana</h2>
+        <p>Ghana CX provides a structured platform for people to evaluate their experience with institutions across major service sectors.</p>
+        <p>Customer feedback is captured across the moments that shape real experience — access, digital interaction, service quality, responsiveness, trust, transparency, problem resolution and overall satisfaction.</p>
+        <p>The objective is to transform customer experience from isolated opinion into structured evidence that can support benchmarking, service improvement and institutional accountability.</p>
+      </div>
+    </section>
+
+    <!-- WHAT GHANA CX MEASURES -->
+    <section class="section-dimensions" id="what-measures">
+      <div class="container">
+        <h2>What Ghana CX Measures</h2>
+        <p class="section-subtitle">Customer experience across 10 core dimensions</p>
+        <div class="dimensions-grid">
+          <div class="dimension-card">
+            <img src="assets/sections/access-convenience.png" alt="Access & Convenience" loading="lazy" decoding="async">
+            <h3>Access & Convenience</h3>
+            <p>Ease of reaching services and institutions</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/digital-experience.png" alt="Digital Experience" loading="lazy" decoding="async">
+            <h3>Digital Experience</h3>
+            <p>Quality of online and mobile channels</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/physical-service.png" alt="Physical Service Experience" loading="lazy" decoding="async">
+            <h3>Physical Service Experience</h3>
+            <p>In-person branch and office experience</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/customer-service.png" alt="Customer Service" loading="lazy" decoding="async">
+            <h3>Customer Service</h3>
+            <p>Quality of staff and support interactions</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/speed-efficiency.png" alt="Speed & Efficiency" loading="lazy" decoding="async">
+            <h3>Speed & Efficiency</h3>
+            <p>Response times and service delivery</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/product-value.png" alt="Product / Service Value" loading="lazy" decoding="async">
+            <h3>Product / Service Value</h3>
+            <p>Relevance and quality of offerings</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/trust-security.png" alt="Trust & Security" loading="lazy" decoding="async">
+            <h3>Trust & Security</h3>
+            <p>Data safety and institutional reliability</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/transparency.png" alt="Transparency" loading="lazy" decoding="async">
+            <h3>Transparency</h3>
+            <p>Clear communication and disclosure</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/problem-resolution.png" alt="Problem Resolution" loading="lazy" decoding="async">
+            <h3>Problem Resolution</h3>
+            <p>How issues are handled and resolved</p>
+          </div>
+          <div class="dimension-card">
+            <img src="assets/sections/overall-experience.png" alt="Overall Experience" loading="lazy" decoding="async">
+            <h3>Overall Experience</h3>
+            <p>Aggregate satisfaction and likelihood to recommend</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE SECTORS -->
+    <section class="section-sectors" id="sectors">
+      <div class="container">
+        <h2>Explore Customer Experience Sectors</h2>
+        <p class="section-subtitle">Select a sector to evaluate institutions and services</p>
+        <div class="sectors-grid" id="sectors-grid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section-how" id="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choose an Industry</h3>
+            <p>Select the sector in which you want to share your experience.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Select an Institution</h3>
+            <p>Choose the organization whose service you want to evaluate.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Share Your Experience</h3>
+            <p>Complete the customer experience questionnaire for your chosen sector.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Contribute to Insight</h3>
+            <p>Your responses contribute to structured customer experience analysis and benchmarking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CUSTOMER EXPERIENCE MATTERS -->
+    <section class="section-why" id="why-matters">
+      <div class="container">
+        <h2>Why Customer Experience Matters</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>For Customers</h3>
+            <ul>
+              <li><strong>Voice</strong> — Your experience is heard and recorded</li>
+              <li><strong>Evidence</strong> — Structured feedback supports improvement</li>
+              <li><strong>Better Services</strong> — Insights drive service evolution</li>
+              <li><strong>Accountability</strong> — Institutions respond to evidence</li>
+            </ul>
+          </div>
+          <div class="why-card">
+            <h3>For Institutions</h3>
+            <ul>
+              <li><strong>Insight</strong> — Understand real customer experience</li>
+              <li><strong>Benchmarking</strong> — Compare performance with peers</li>
+              <li><strong>Priority Setting</strong> — Focus on high-impact improvements</li>
+              <li><strong>Service Improvement</strong> — Data-driven service evolution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY AND INDEPENDENCE -->
+    <section class="section-privacy" id="privacy-independence">
+      <div class="container">
+        <h2>Privacy and Independence</h2>
+        <p>Ghana CX is designed to collect and analyse customer experience feedback responsibly. Respondents are informed about the information requested and the purpose of collection through the applicable survey and privacy notice.</p>
+        <p><strong>Independent Initiative:</strong> Ghana CX is an independent customer experience measurement initiative, not a regulatory authority or official national benchmark. We operate transparently and are committed to data protection and respondent privacy.</p>
+        <p><a href="/pages/privacy.html">Read our full privacy notice</a></p>
+      </div>
+    </section>
+
+    <!-- FOR INSTITUTIONS -->
+    <section class="section-institutions" id="for-institutions">
+      <div class="container">
+        <h2>For Institutions</h2>
+        <p>Institutions can use structured customer experience insight to better understand service strengths, friction points and areas requiring attention.</p>
+        <p><a href="/pages/institutions.html" class="cta-primary">Learn About Ghana CX for Institutions</a></p>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-cta-final">
+      <div class="container">
+        <h2>Ready to Share Your Experience?</h2>
+        <p>Choose an industry and select an institution to begin.</p>
+        <a href="#sectors" class="cta-primary-large">Choose an Industry</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Ghana CX</h4>
+        <p>Customer Experience Index</p>
+        <p>Experience Intelligence Across Ghana</p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#sectors">Sectors</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="/pages/methodology.html">Methodology</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/pages/privacy.html">Privacy</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghana CX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="data/config.js"></script>
+  <script src="data/institutions.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

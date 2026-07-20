@@ -1,13 +1,35 @@
-# Local logs and temporary files
-*.log
-.system_generated/
-scratch/
+# Dependencies
+node_modules/
+package-lock.json
 
-# Archives and package files
-*.zip
-*.tar.gz
-*.tgz
+# Original unoptimized images (these are in assets/originals)
+github/assets/originals/
 
-# OS specific files
+# Large unorganized source folders
+Branding Pictures/
+batch 1/
+
+# Archive folders
+github/assets/archive/
+
+# Node scripts cache
+.npm/
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Local env files
+.env
+.env.local
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Google Forms credentials (never commit)
+*.credentials.json
+.clasp.json

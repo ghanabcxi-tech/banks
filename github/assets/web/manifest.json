@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-07-20T18:11:01.411Z",
+  "stats": {
+    "imagesProcessed": 18,
+    "totalOriginalSizeMB": 32.47,
+    "totalOptimizedSizeMB": 2.26,
+    "reductionPercent": 93
+  },
+  "images": [
+    {
+      "filename": "ghana-cx-sector-healthcare.png",
+      "category": "sectors",
+      "originalSize": 1865527,
+      "optimizedSize": 45050,
+      "reduction": "97.6"
+    },
+    {
+      "filename": "ghana-cx-sector-education.png",
+      "category": "sectors",
+      "originalSize": 1936644,
+      "optimizedSize": 49804,
+      "reduction": "97.4"
+    },
+    {
+      "filename": "ghana-cx-sector-public-service.png",
+      "category": "dimensions",
+      "originalSize": 1888231,
+      "optimizedSize": 49506,
+      "reduction": "97.4"
+    },
+    {
+      "filename": "ghana-cx-sector-telecommunications.png",
+      "category": "sectors",
+      "originalSize": 1756544,
+      "optimizedSize": 54928,
+      "reduction": "96.9"
+    },
+    {
+      "filename": "ghana-cx-sector-banking.png",
+      "category": "sectors",
+      "originalSize": 1852750,
+      "optimizedSize": 60974,
+      "reduction": "96.7"
+    },
+    {
+      "filename": "ghana-cx-dimension-digital-experience.png",
+      "category": "dimensions",
+      "originalSize": 1956074,
+      "optimizedSize": 72146,
+      "reduction": "96.3"
+    },
+    {
+      "filename": "ghana-cx-sector-utilities.png",
+      "category": "sectors",
+      "originalSize": 2135796,
+      "optimizedSize": 89814,
+      "reduction": "95.8"
+    },
+    {
+      "filename": "ghana-cx-dimension-customer-service.png",
+      "category": "dimensions",
+      "originalSize": 1817467,
+      "optimizedSize": 96542,
+      "reduction": "94.7"
+    },
+    {
+      "filename": "ghana-cx-dimension-access-convenience.png",
+      "category": "dimensions",
+      "originalSize": 2014948,
+      "optimizedSize": 111706,
+      "reduction": "94.5"
+    },
+    {
+      "filename": "ghana-cx-dimension-physical-service.png",
+      "category": "dimensions",
+      "originalSize": 2031780,
+      "optimizedSize": 114098,
+      "reduction": "94.4"
+    },
+    {
+      "filename": "ghana-cx-dimension-trust-security.png",
+      "category": "dimensions",
+      "originalSize": 1846574,
+      "optimizedSize": 103274,
+      "reduction": "94.4"
+    },
+    {
+      "filename": "ghana-cx-dimension-transparency.png",
+      "category": "dimensions",
+      "originalSize": 1815963,
+      "optimizedSize": 104850,
+      "reduction": "94.2"
+    },
+    {
+      "filename": "ghana-cx-dimension-speed-efficiency.png",
+      "category": "dimensions",
+      "originalSize": 1886903,
+      "optimizedSize": 112712,
+      "reduction": "94.0"
+    },
+    {
+      "filename": "ghana-cx-dimension-overall-experience.png",
+      "category": "dimensions",
+      "originalSize": 1843673,
+      "optimizedSize": 112764,
+      "reduction": "93.9"
+    },
+    {
+      "filename": "ghana-cx-dimension-problem-resolution.png",
+      "category": "dimensions",
+      "originalSize": 1847259,
+      "optimizedSize": 113982,
+      "reduction": "93.8"
+    },
+    {
+      "filename": "ghana-cx-dimension-product-value.png",
+      "category": "dimensions",
+      "originalSize": 2000618,
+      "optimizedSize": 129080,
+      "reduction": "93.5"
+    },
+    {
+      "filename": "ghana-cx-hero-master.png",
+      "category": "hero",
+      "originalSize": 1789483,
+      "optimizedSize": 385542,
+      "reduction": "78.5"
+    },
+    {
+      "filename": "ghana-cx-sector-master.png",
+      "category": "hero",
+      "originalSize": 1760914,
+      "optimizedSize": 564662,
+      "reduction": "67.9"
+    }
+  ]
+}
